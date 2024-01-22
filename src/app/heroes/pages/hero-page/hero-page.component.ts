@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-page.component.css']
 })
 export class HeroPageComponent {
-
+  
 }
