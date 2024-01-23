@@ -19,4 +19,10 @@ export class HeroService {
         catchError(err => of(undefined))
       )
   }
+
+  getSuggestions(query : string) : Observable<Hero[]> {
+    const url = `${ this.url }/heroes?q=${ query }&_limit=6`
+    console.log(url)
+    return this.http.get<Hero[]>(url);
+  }
 }
