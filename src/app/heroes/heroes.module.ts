@@ -8,6 +8,8 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { AddHeroPageComponent } from './pages/add-hero-page/add-hero-page.component';
 import { SearchHeroPageComponent } from './pages/search-hero-page/search-hero-page.component';
 import { MaterialModule } from '../material/material.module';
+import { CardComponent } from './components/card/card.component';
+import { HeroImagePipe } from './pipes/heroImage.pipe';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { MaterialModule } from '../material/material.module';
     LayoutPageComponent,
     ListPageComponent,
     AddHeroPageComponent,
-    SearchHeroPageComponent
+    SearchHeroPageComponent,
+    CardComponent,
+    HeroImagePipe
   ],
   imports: [
     CommonModule,
