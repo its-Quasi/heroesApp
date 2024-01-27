@@ -1,7 +1,8 @@
 ## Development server
 
-1. Run `npm run backend` to start json-server
-2. Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Run `npm install` 
+2. Run `npm run backend` to start json-server
+3. Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 
 ## Code scaffolding
