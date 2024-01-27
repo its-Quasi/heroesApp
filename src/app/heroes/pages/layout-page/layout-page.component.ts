@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/auth/interfaces/user.interface';
 import { AuthService } from 'src/app/auth/services/auth.service';
 
 @Component({
@@ -15,6 +16,10 @@ export class LayoutPageComponent {
     { label: 'add', icon: 'person_add', url: 'add' },
     { label: 'search', icon: 'search', url: 'search' }
   ]
+
+  get user() : User | undefined {
+    return this.authService.currentUser
+  }
 
   onLogout(): void {
     this.authService.logout()
