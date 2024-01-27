@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Estas seguro?</h1>
+<div mat-dialog-content>
+  <p>Esta Accion no es reversible</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <div class="spacer"></div>
+  <button mat-button (click)="onConfirmClick()" cdkFocusInitial>Ok</button>
+</div>

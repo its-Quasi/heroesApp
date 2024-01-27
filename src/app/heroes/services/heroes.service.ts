@@ -20,6 +20,8 @@ export class HeroService {
   // CRUD Operations
 
   create(hero : Hero) : Observable<Hero> {
+    hero.id = hero.superhero
+    console.log('service' , hero)
     return this.http.post<Hero>(`${this.url}/heroes` , hero)
   }
 

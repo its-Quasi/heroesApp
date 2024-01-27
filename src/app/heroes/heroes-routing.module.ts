@@ -8,15 +8,15 @@ import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 
 const routes: Routes = [
   {
-    path : '',
-    component : LayoutPageComponent,
-    children : [
-      { path : 'add', component : AddHeroPageComponent},
-      { path : 'list', component : ListPageComponent },
-      {path : 'search' , component : SearchHeroPageComponent},
-      {path : 'edit/:id' , component : AddHeroPageComponent},
-      {path : ':id' , component : HeroPageComponent},
-      { path : '**', redirectTo : 'list' }
+    path: '',
+    component: LayoutPageComponent,
+    children: [
+      { path: 'add', component: AddHeroPageComponent },
+      { path: 'list', component: ListPageComponent },
+      { path: 'search', component: SearchHeroPageComponent },
+      { path: 'edit/:id', component: AddHeroPageComponent },
+      { path: ':id', component: HeroPageComponent },
+      { path: '**', redirectTo: 'list' }
     ]
   }
 ];
